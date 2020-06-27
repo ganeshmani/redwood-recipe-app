@@ -26,10 +26,14 @@ const SignupPage = () => {
   })
 
   const [signup] = useMutation(SINGUP_USER, {
-    onCompleted: () => {
-      navigate(routes.home())
+    onCompleted: (createUser) => {
+      localStorage.setItem('authToken', createUser.token)
 
       setState({ name: '', email: '', password: '' })
+
+      setTimeout(() => {
+        navigate(routes.home())
+      }, 2000)
     },
   })
 
