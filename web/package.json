@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@redwoodjs/router": "^0.11.0",
+    "@redwoodjs/web": "^0.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.1",
+    "postcss-loader": "^3.0.0",
+    "tailwindcss": "^1.4.6"
+  }
+}
